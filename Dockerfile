@@ -1,4 +1,4 @@
-FROM openjdk:17-ea-slim-buster
+FROM openjdk:8u102-jre
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
